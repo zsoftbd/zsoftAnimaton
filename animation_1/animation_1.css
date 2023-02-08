@@ -1,0 +1,32 @@
+.c_bat {
+    margin-top: 150PX;
+    background-color: rgba(0, 0, 0, 0.285);
+    border-radius: 30px;
+}
+
+.bat {
+    transition: transform 0.3s;
+}
+
+.c_bat:hover img {
+    transform: rotate(-60deg);
+    transform-origin: top right;
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: red;
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+}
+
+.ball {
+    transition: transform 1s;
+}
+
+.c_bat:hover .ball {
+    transform: translate(1200px, -250px);
+}

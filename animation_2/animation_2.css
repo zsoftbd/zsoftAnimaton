@@ -1,0 +1,47 @@
+@keyframes sliding {
+    from {
+        background-color: brown;
+        left: 0;
+        top: 0;
+    }
+    20% {
+        background-color: blue;
+        top: 200px;
+        transform: scale(0.5);
+    }
+    40% {
+        top: 0px;
+        background-color: yellow;
+    }
+    60% {
+        top: 200px;
+        background-color: royalblue;
+        transform: scale(0.5);
+    }
+    80% {
+        top: 0px;
+        background-color: blueviolet;
+    }
+    100% {
+        background-color: magenta;
+        left: 920px;
+        top: 0px
+    }
+}
+
+.main_amimate {
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+    background-color: rgba(26, 58, 58, 0.596);
+}
+
+.prent_animate {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50px;
+    position: relative;
+    animation: sliding 3s ease-in-out 0.5s infinite alternate-reverse;
+    animation-play-state: running;
+}
